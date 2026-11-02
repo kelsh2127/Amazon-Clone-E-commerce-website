@@ -1,0 +1,136 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    gap: 20px;
+    padding: 0 20px;
+}
+.container img {
+    width: 100% !important
+   
+}
+.btn_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.btn{
+    padding: 5px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+}
+.cart_product{
+    display: flex;
+    gap: 10px;
+}
+.cart_container {
+    flex: 1; /* Takes remaining space */
+    padding: 20px;
+    background-color: #fff;
+    height: 50%;
+}
+
+.cart_container h2 {
+    padding: 10px 0;
+    margin: 0;
+}
+
+.cart_container h3 {
+    padding: 10px 0;
+    margin: 0;
+    font-weight: 500;
+}
+
+.cart_container hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid rgb(193, 193, 193);
+}
+
+.subtotal {
+    padding: 20px;
+    min-width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid rgb(193, 193, 193);
+    background-color: rgb(242, 241, 241);
+    border-radius: 5px;
+    position: sticky;
+    top: 20px;
+}
+
+.subtotal > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.subtotal > div:first-child span {
+    font-weight: 500;
+}
+
+.subtotal > div:first-child Currencyfromat {
+    font-weight: 600;
+    color: #B12704;
+}
+
+.subtotal > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.subtotal input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.subtotal label {
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+}
+
+.subtotal a {
+    text-align: center;
+    width: 100%;
+    border: none;
+    background-color: #ffd814;
+    border-radius: 8px;
+    padding: 8px 0;
+    text-decoration: none;
+    color: #0F1111;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.subtotal a:hover {
+    background-color: #f7ca00;
+}
+
+/* Responsive design */
+@media screen and (max-width: 968px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .cart_container {
+        order: 2;
+    }
+    
+    .subtotal {
+        order: 1;
+        min-width: auto;
+        position: static;
+    }
+}

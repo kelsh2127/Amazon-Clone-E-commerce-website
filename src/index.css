@@ -1,0 +1,10 @@
+*{
+    margin:0;
+    padding:0;
+   font-family: sans-serif;
+   box-sizing: border-box;
+}
+:root{
+    --primary-color: #f0c14b;
+    --primary-shade: #e2b33c;
+}

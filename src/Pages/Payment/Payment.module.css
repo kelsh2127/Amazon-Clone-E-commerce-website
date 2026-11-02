@@ -1,0 +1,316 @@
+.payment_header {
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  background-color: rgb(234, 237, 237);
+}
+
+.payment {
+  padding: 30px;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+.flex h3 {
+  min-width: 300px;
+}
+
+.flex img {
+  width: 80px !important;
+}
+
+.flex div {
+  height: auto !important;
+}
+
+.payment_card_container {
+  max-width: 350px;
+  width: 100%;
+}
+
+.payment_details {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.payment_price {
+  padding: 20px;
+}
+
+.payment_price > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.payment_details button {
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.payment_details button:hover {
+  background-color: var(--primary-shade);
+}
+
+/* New styles for Chapa payment method card */
+.payment_method_card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 20px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.payment_method_card:hover {
+  box-shadow: 0 8px 30px rgba(102, 126, 234, 0.15);
+}
+
+.method_header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 16px;
+}
+
+.method_logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.method_header h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.method_description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding: 0 4px;
+}
+
+.payment_options {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.payment_options small {
+  color: #666;
+  display: block;
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.payment_methods_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.payment_methods_list span {
+  background: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #667eea;
+  border: 1px solid #667eea;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.payment_methods_list span:hover {
+  background: #667eea;
+  color: white;
+}
+
+.payment_price {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.payment_price > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total_label {
+  font-weight: 500;
+  color: #666;
+  font-size: 16px;
+}
+
+.total_amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.pay_button {
+  margin-top: 10px !important;
+  width: 100%;
+  border: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border-radius: 8px !important;
+  padding: 14px 10px !important;
+  cursor: pointer;
+  color: white !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.pay_button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+.pay_button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: linear-gradient(135deg, #a0a0a0 0%, #808080 100%) !important;
+}
+
+.pay_button .spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 0.8s linear infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.redirect_note {
+  color: #999;
+  font-size: 12px;
+  margin-top: 12px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.error_message {
+  background: #fee;
+  color: #c33;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  border: 1px solid #fcc;
+}
+
+.dismiss_button {
+  background: none;
+  border: none;
+  color: #c33;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+.dismiss_button:hover {
+  color: #900;
+}
+
+.products_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .payment {
+    padding: 15px;
+  }
+  
+  .flex h3 {
+    min-width: auto;
+    margin-bottom: 10px;
+  }
+  
+  .payment_method_card {
+    padding: 16px;
+  }
+  
+  .method_header h4 {
+    font-size: 16px;
+  }
+  
+  .total_amount {
+    font-size: 20px;
+  }
+  
+  .payment_options {
+    padding: 12px;
+  }
+  
+  .payment_methods_list span {
+    padding: 4px 10px;
+    font-size: 11px;
+  }
+}
+
+/* For very small screens */
+@media screen and (max-width: 480px) {
+  .payment_price > div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .pay_button {
+    padding: 12px 10px !important;
+    font-size: 14px !important;
+  }
+  
+  .method_header {
+    gap: 8px;
+  }
+  
+  .method_logo {
+    width: 30px;
+    height: 30px;
+  }
+}
