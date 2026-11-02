@@ -1,16 +1,89 @@
-# React + Vite
+# Amazon Clone – E-commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An Amazon-inspired e-commerce website built with modern web technologies. This project recreates the core shopping experience of Amazon, providing users with an online shopping interface.
 
-Currently, two official plugins are available:
+## 🚀 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Vite
+- Firebase
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Amazon-inspired user interface
+- Product search functionality
+- Shopping cart interface
+- Returns and Orders section
+- Responsive navigation
+- Firebase configuration and integration
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+amazon/
+├── public/
+├── src/
+├── functions/
+├── node_modules/
+├── .env
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
+
+## ⚙️ Installation and Setup
+
+Follow these steps to run the project locally.
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/kelsh2127/Amazon-Clone-E-commerce-website.git
+```
+
+**2. Navigate to the project directory**
+
+```bash
+cd Amazon-Clone-E-commerce-website
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Start the development server**
+
+```bash
+npm run dev
+```
+
+**5. Open the application**
+
+Visit the local URL provided by Vite in your browser.
+
+## 🔥 Firebase Configuration
+
+This project includes Firebase configuration files.
+
+To use your own Firebase project, configure the required Firebase credentials and environment variables. Do not upload private credentials or `.env` files to GitHub.
+
+## 🎯 Project Purpose
+
+This project was developed to practice modern frontend development, React.js, JavaScript, e-commerce UI design, and Firebase integration.
+
+## 👨‍💻 Author
+
+**Lidu**
+
+GitHub: [@kelsh2127](https://github.com/kelsh2127)
+
+---
+
+⭐ If you find this project interesting, feel free to explore the repository!
